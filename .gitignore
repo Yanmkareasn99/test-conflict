@@ -1,0 +1,8 @@
+# 以下をgitの管理対象から除外
+# ビルドされたclassファイル
+bin/
+*.class
+
+
+# VS Code の設定
+.vscode/
