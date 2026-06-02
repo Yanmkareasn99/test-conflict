@@ -1,8 +1,10 @@
-# 以下をgitの管理対象から除外
-# ビルドされたclassファイル
-bin/
-*.class
+# Dependency folders
+node_modules/
 
+# Local development artifacts
+.DS_Store
+*.log
 
-# VS Code の設定
-.vscode/
+# Build output from ad hoc tooling
+dist/
+build/
