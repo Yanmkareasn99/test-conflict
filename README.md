@@ -1,18 +1,21 @@
-## Getting Started
+# Polyglot OCR Studio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Polyglot OCR Studio is a multilingual, browser-only OCR web app built with JavaScript. It uses client-side Tesseract.js for text recognition and PDF.js for rendering PDF pages before OCR, so uploaded files stay in the browser.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- Recognizes text from image files and PDFs.
+- Supports selecting one or more OCR languages, including English, Spanish, French, German, Italian, Portuguese, Hindi, Japanese, Korean, Simplified Chinese, Arabic, and Russian.
+- Lets users process all PDF pages or a custom range such as `1-3,5`.
+- Displays upload previews, OCR progress, extracted text, and copy/download actions.
+- Runs as a static frontend with no Java or backend service required.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Run the app
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Start the JavaScript static server from the repository root, then open the printed URL in a browser:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+npm start
+```
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The app loads Tesseract.js and PDF.js from CDNs, so an internet connection is required when opening the page.

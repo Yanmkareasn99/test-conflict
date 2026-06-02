@@ -1,0 +1,11 @@
+{
+  "name": "polyglot-ocr-studio",
+  "version": "1.0.0",
+  "description": "A browser-only multilingual OCR web app built with JavaScript.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check server.js"
+  },
+  "license": "MIT"
+}
